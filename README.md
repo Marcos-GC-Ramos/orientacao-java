@@ -1,25 +1,14 @@
-### **Classe Cadastro**
+## Projeto Java
 
-A classe Cadastro é responsável por realizar operações de cadastro de usuários em um sistema. Ela interage com o banco de dados para inserir novos usuários e verificar a existência de usuários já cadastrados.
+Este repositório contém uma parte do projeto WEB em Java. Este é o backend responsável pelo gerenciamento das operações de cadastro e login.
 
-### **Funcionalidades Principais:**
+### Cadastro
 
-- Cadastro de Usuário: Permite cadastrar um novo usuário no sistema, incluindo informações como nome, login e senha.
-- Verificação de Usuário Existente: Verifica se um usuário já está cadastrado no sistema com base no login e senha fornecidos.
+A pasta "cadastro" contém o código-fonte responsável por gerenciar o cadastro de usuários no sistema. A classe `Cadastro` interage com o banco de dados para inserir novos usuários e verificar a existência de usuários já cadastrados.
 
-### **Estrutura da Classe:**
+### Login
 
-A classe Cadastro é composta pelos seguintes métodos:
+A pasta "login" contém o código-fonte responsável pela autenticação de usuários no sistema. A classe `Login` permite que usuários registrados façam login no sistema, verificando suas credenciais com as informações armazenadas no banco de dados.
 
-- `cadastrarUsuario(Usuario usuario)`: Método responsável por cadastrar um novo usuário no sistema, inserindo as informações na tabela de usuários do banco de dados.
-- `verificarUsuarioExistente(String login, String senha)`: Método que verifica se um usuário já está cadastrado no sistema com base no login e senha fornecidos.
-  
-###  **Utilização:**
-
-Para utilizar a classe Cadastro, basta criar uma instância da classe e chamar os métodos conforme necessário. Por exemplo:
-
-```java
-Cadastro cadastro = new Cadastro();
-cadastro.cadastrarUsuario(usuario);
-boolean usuarioExistente = cadastro.verificarUsuarioExistente(login, senha);
+Este projeto é uma parte do projeto WEB e foi desenvolvido em Java. Utiliza um banco de dados MySQL para armazenar as informações dos usuários.
 
