@@ -1,18 +1,34 @@
-## Getting Started
+## Classe Cadastro
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+A classe Cadastro é responsável por gerenciar o processo de cadastro de usuários no sistema. Ela oferece funcionalidades para adicionar novos usuários e verificar a existência de usuários já cadastrados.
 
-## Folder Structure
+### Funcionalidades:
 
-The workspace contains two folders by default, where:
+- **Cadastrar Usuário:** Permite adicionar um novo usuário ao sistema, incluindo informações como nome, login e senha.
+- **Verificar Usuário Existente:** Verifica se um usuário já está cadastrado no sistema com base no login fornecido.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+### Estrutura do Código:
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+```java
+public class Cadastro {
+    
+    /**
+     * Cadastra um novo usuário no sistema.
+     * 
+     * @param usuario Objeto contendo as informações do usuário a ser cadastrado.
+     */
+    public void cadastrarUsuario(Usuario usuario) {
+        // Implementação do método para cadastrar usuário no sistema
+    }
+    
+    /**
+     * Verifica se um usuário já está cadastrado no sistema.
+     * 
+     * @param login Login do usuário a ser verificado.
+     * @return true se o usuário já está cadastrado, false caso contrário.
+     */
+    public boolean verificarUsuarioExistente(String login) {
+        // Implementação do método para verificar se usuário existe no sistema
+        return false; // Exemplo: sempre retorna falso, implementação real depende da lógica desejada
+    }
+}
